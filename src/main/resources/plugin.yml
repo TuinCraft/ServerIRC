@@ -1,0 +1,8 @@
+name: ${pom.name}
+main: tuincraft.ServerIRC.ServerIRCPlugin
+version: ${pom.version}
+website: ${pom.url}
+author: TuincrafT
+description: >
+             IRC bot for a minecraft server.
+             Forwards specific events to an IRC channel.
