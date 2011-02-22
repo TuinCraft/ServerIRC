@@ -55,10 +55,17 @@ public class ServerIRCEntityListener extends EntityListener {
 		}
 		//else
 		//{
-			log.log(Level.INFO, entityToString(event.getEntity()) +" got damaged ("+(event.getDamage())+"): " + event.getCause().toString());
 			
-			if (event.getEntity() instanceof LivingEntity && ((LivingEntity) event.getEntity()).getHealth() <= event.getDamage())
-				this.plugin.getServerBot().sendToAllChannels(((Player)event.getEntity()).getName() + " died by " + event.getCause().toString().toLowerCase());
+			if (event.getEntity() instanceof LivingEntity){
+				LivingEntity entity = (LivingEntity) event.getEntity();
+				int health = entity.getHealth();
+				int damage = event.getDamage();
+				log.log(Level.INFO, entityToString(event.getEntity()) +" got damaged ("+(event.getDamage())+"): " + event.getCause().toString());
+				if( health > 0 && health <= damage)
+				{
+					this.plugin.getServerBot().sendToAllChannels(((Player)event.getEntity()).getName() + " died by " + event.getCause().toString().toLowerCase());
+				}
+			}
 		//}
 	}
 	
