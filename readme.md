@@ -20,6 +20,7 @@ Use irc.serverbot to set the bot's name.
 
 Downloads:
 ----------
+[ServerIRC v0.1](https://github.com/downloads/TuinCraft/ServerIRC/ServerIRC-0.1.jar)
 [Source](https://github.com/TuinCraft/ServerIRC)
 
 Features:
