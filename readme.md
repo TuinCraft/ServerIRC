@@ -17,19 +17,19 @@ The irc.server setting is mandatory. All other settings are optional.
 Set irc.autojoin to a channel to have your bot autojoin that channel.
 Use irc.serverbot to set the bot's name.
 
-Available commands:
-------------------
 
-None!
-
-
+Downloads:
+----------
 [Source](https://github.com/TuinCraft/ServerIRC)
 
 Features:
 ---------
   * Let a bot join an IRC channel.
   * Listen to custom events.
-  * Use [HeroicDeath](http://forums.bukkit.org/threads/info-heroicdeath-v1-4-3-customizable-server-broadcasts-on-player-death-211-450.3255/) for death events.
+
+Optional Addons:
+----------------
+  * Use [HeroicDeath 1.4.2+](http://forums.bukkit.org/threads/info-heroicdeath-v1-4-3-customizable-server-broadcasts-on-player-death-211-450.3255/) for death events.
 
 TODO:
 -----
