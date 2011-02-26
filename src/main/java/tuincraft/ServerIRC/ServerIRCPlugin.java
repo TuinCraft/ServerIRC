@@ -76,10 +76,12 @@ public class ServerIRCPlugin extends JavaPlugin {
 			return;
 		}
 		
-		ServerIRCEntityListener entityListener = new ServerIRCEntityListener(this);
+		//ServerIRCEntityListener entityListener = new ServerIRCEntityListener(this);
+		CustomListener customListener = new CustomListener(this);
 		
-		pm.registerEvent(Type.ENTITY_DEATH, entityListener, Priority.Normal, this);
-		pm.registerEvent(Type.ENTITY_DAMAGED, entityListener, Priority.Normal, this);
+		//pm.registerEvent(Type.ENTITY_DEATH, entityListener, Priority.Normal, this);
+		//pm.registerEvent(Type.ENTITY_DAMAGED, entityListener, Priority.Normal, this);
+		pm.registerEvent(Type.CUSTOM_EVENT, customListener, Priority.Normal, this);
 		
 		this.autojoin = sp.getProperty("irc.autojoin", "");
 		this.verbose = Boolean.parseBoolean(sp.getProperty("irc.verbose", "false"));
