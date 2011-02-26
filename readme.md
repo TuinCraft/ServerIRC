@@ -1,4 +1,4 @@
-[CHAT/MISC] ServerIRC 0.1 - Minecraft server bot in an IRC channel
+[INFO/CHAT] ServerIRC 0.1 - Minecraft server bot in an IRC channel
 =============================================================
 
 Creates a bot for the server that joins an IRC channel.
