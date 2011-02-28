@@ -1,9 +1,9 @@
-[INFO/CHAT] ServerIRC 0.1 - Minecraft server bot in an IRC channel
+[INFO/CHAT] ServerIRC 0.1 - Minecraft server bot for IRC channels
 =============================================================
 
 Creates a bot for the server that joins an IRC channel.
 This is a Bukkit plugin.
-Works great in combination with [IRCTransport](http://forums.bukkit.org/threads/chat-irctransport-0-5-minecraft-chat-irc-integration.3412/).
+Inspired by (and works great in combination with) [IRCTransport](http://forums.bukkit.org/threads/chat-irctransport-0-5-minecraft-chat-irc-integration.3412/). (Thanks hef!)
 
 Available settings:
 ------------------

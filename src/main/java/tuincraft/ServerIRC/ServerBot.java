@@ -1,7 +1,6 @@
 package tuincraft.ServerIRC;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -30,7 +29,7 @@ public class ServerBot extends PircBot {
 	public void sendToAllChannels(String message) {
 		for (String channel  : this.getChannels())
 		{
-			this.sendMessage(channel, message);
+			this.sendMessage(channel, ColorMap.toIrc(message));
 		}
 	}
 }
