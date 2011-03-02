@@ -4,7 +4,7 @@
 
   <groupId>tuincraft</groupId>
   <artifactId>ServerIRC</artifactId>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.2</version>
   <packaging>jar</packaging>
 
   <name>ServerIRC</name>
