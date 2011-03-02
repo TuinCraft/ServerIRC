@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import org.bukkit.event.CustomEventListener;
 import org.bukkit.event.Event;
 
+import com.amagineer.bukkit.minecraftchecker.MinecraftStatusEvent;
 import com.herocraftonline.squallseed31.heroicdeath.HeroicDeathEvent;
 
 public class CustomListener extends CustomEventListener {
@@ -24,6 +25,11 @@ public class CustomListener extends CustomEventListener {
 		{
 			HeroicDeathEvent hde = (HeroicDeathEvent) event;
 			this.plugin.getServerBot().sendToAllChannels(hde.getDeathCertificate().getMessage());
+		}
+		if(event instanceof MinecraftStatusEvent)
+		{
+			MinecraftStatusEvent mse = (MinecraftStatusEvent) event;
+			this.plugin.getServerBot().sendToAllChannels(mse.getReason());
 		}
 	}
 
