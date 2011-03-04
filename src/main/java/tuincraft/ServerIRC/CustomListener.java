@@ -20,16 +20,23 @@ public class CustomListener extends CustomEventListener {
 
 	@Override
 	public void onCustomEvent(Event event) {
-		
-		if(event instanceof HeroicDeathEvent)
-		{
-			HeroicDeathEvent hde = (HeroicDeathEvent) event;
-			this.plugin.getServerBot().sendToAllChannels(hde.getDeathCertificate().getMessage());
+		try {
+			if(event instanceof HeroicDeathEvent)
+			{
+				HeroicDeathEvent hde = (HeroicDeathEvent) event;
+				this.plugin.getServerBot().sendToAllChannels(hde.getDeathCertificate().getMessage());
+			}
+		} catch(NoClassDefFoundError e)	{
+			// I really want to ignore this.
 		}
-		if(event instanceof MinecraftStatusEvent)
-		{
-			MinecraftStatusEvent mse = (MinecraftStatusEvent) event;
-			this.plugin.getServerBot().sendToAllChannels(mse.getReason());
+		try {
+			if(event instanceof MinecraftStatusEvent)
+			{
+				MinecraftStatusEvent mse = (MinecraftStatusEvent) event;
+				this.plugin.getServerBot().sendToAllChannels(mse.getReason());
+			}
+		} catch(NoClassDefFoundError e)	{
+			// I really want to ignore this.
 		}
 	}
 

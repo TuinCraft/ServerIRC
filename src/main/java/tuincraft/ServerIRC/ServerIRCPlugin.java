@@ -69,6 +69,7 @@ public class ServerIRCPlugin extends JavaPlugin {
 		
 		pm.registerEvent(Type.CUSTOM_EVENT, new CustomListener(this), Priority.Normal, this);
 		//pm.registerEvent(Type.PLAYER_COMMAND_PREPROCESS, new PlayerListener(this), Priority.Normal, this);
+		//pm.registerEvent(Type.SERVER_COMMAND, new ServerListener(this), Priority.Normal, this);
 		
 		this.autojoin = sp.getProperty("irc.autojoin", "");
 		this.verbose = Boolean.parseBoolean(sp.getProperty("irc.verbose", "false"));
