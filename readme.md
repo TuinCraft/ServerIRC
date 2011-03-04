@@ -1,4 +1,4 @@
-[INFO/CHAT] ServerIRC 0.1 - Minecraft server bot for IRC channels
+[INFO/CHAT] ServerIRC 0.3 - Minecraft server bot for IRC channels
 =============================================================
 
 Creates a bot for the server that joins an IRC channel.
@@ -20,7 +20,7 @@ Use irc.serverbot to set the bot's name.
 
 Downloads:
 ----------
-[ServerIRC v0.1](https://github.com/downloads/TuinCraft/ServerIRC/ServerIRC-0.1.jar)
+[ServerIRC v0.3](https://github.com/downloads/TuinCraft/ServerIRC/ServerIRC-0.3.jar)
 [Source](https://github.com/TuinCraft/ServerIRC)
 
 Features:
@@ -34,12 +34,15 @@ Optional Addons:
 
 TODO:
 -----
-  * Fix IRC colors.
-  * Display teleport events.
-  * Display other events.
+  * [Issues](https://github.com/TuinCraft/ServerIRC/issues)
 
 Changelog:
 ----------
+### Version 0.3
+  * Removed debug stuff from the previous version
+  * Fixed an error if HeroicDeath was missing.
+### Version 0.2
+  * Working Colors
 ### Version 0.1
   * Basic bot features.
   * HeroicDeath events.
